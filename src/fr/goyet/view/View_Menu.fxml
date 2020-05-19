@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.goyet.controller.MenuController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Gestion">
+            <items>
+                  <MenuItem fx:id="accueil" mnemonicParsing="false" onAction="#onClickAccueil" text="Accueil" />
+                  <MenuItem fx:id="gestionnaire" mnemonicParsing="false" onAction="#onClickGestionnaire" text="Gestionnaire" />
+              <MenuItem fx:id="quitter" mnemonicParsing="false" onAction="#onClickQuitter" text="Quitter" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aide">
+            <items>
+              <MenuItem fx:id="help" mnemonicParsing="false" onAction="#onClickHelp" text="A Propos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
